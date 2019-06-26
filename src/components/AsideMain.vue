@@ -42,7 +42,6 @@
           <el-menu-item index="3-1">文本分词</el-menu-item>
           <el-menu-item index="3-2">
             <router-link to="/TextSummar">文本摘要</router-link>
-            <router-view></router-view>
           </el-menu-item>
           <el-menu-item index="3-3">
             <router-link to="/ChatRobot">聊天机器人</router-link>

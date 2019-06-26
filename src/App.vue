@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <el-container class="wrapper">
-      <el-header height="60px">
+      <el-header height="60px" style="padding:0">
         <headertop></headertop>
       </el-header>
       <el-container>
-        <el-aside width="200px">
-          <asidemain></asidemain>
+        <el-aside :style="{width: 'auto'}">
+          <Aside :collapse="collapse" @collaspeChange="handleChange"/>
         </el-aside>
-        <el-main>
+        <el-main class="main">
           <router-view></router-view>
         </el-main>
       </el-container>
@@ -18,40 +18,37 @@
 
 <script>
 import HeaderTop from '@/components/HeaderTop'
-import AsideMain from '@/components/AsideMain'
+import Aside from '@/components/Aside'
 
 export default {
   name: 'App',
+
+  data () {
+    return {
+      collapse: false
+    }
+  },
+
+  methods: {
+    handleChange (val) {
+      this.collapse = !val
+    }
+  },
+
   components: {
     headertop: HeaderTop,
-    asidemain: AsideMain
+    Aside
   }
 }
 </script>
-<style>
-body {
-  margin: 0px;
-}
-.el-header {
-  padding: 0px;
-}
-.el-menu--horizontal > .el-menu-item {
-  float: right;
-}
-.el-menu--horizontal > .el-submenu {
-  float: right;
-}
-</style>
 
-<!--
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+.main{
+  height: 100vh - 60px;
+  overflow: auto;
 }
 </style>
--->

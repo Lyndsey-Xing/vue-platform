@@ -11,6 +11,7 @@ import Home from '@/components/Home.vue'
 import SpaceNLP from '@/components/SpaceNLP.vue'
 import TextSummar from '@/components/TextSummar.vue'
 import ChatRobot from '@/components/ChatRobot.vue'
+import '@/assets/main.css'
 
 Vue.config.productionTip = false
 
