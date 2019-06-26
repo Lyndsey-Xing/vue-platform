@@ -15,32 +15,27 @@ export default new Router({
     {
       path: '/',
       component: Container,
+      redirect: '/DataCollection/Upload',
       children: [
         {
-          path: 'DataCollection',
-          redirect: 'Upload',
-          children: [
-            {
-              name: '数据集上传',
-              path: 'Upload',
-              component: Upload
-            },
-            {
-              name: '数据集下载',
-              path: 'Download',
-              component: Download
-            },
-            {
-              name: '数据集删除',
-              path: 'Delete',
-              component: DelelteData
-            },
-            {
-              name: '数据集查看',
-              path: 'Query',
-              component: Query
-            }
-          ]
+          name: '数据集上传',
+          path: 'DataCollection/Upload',
+          component: Upload
+        },
+        {
+          name: '数据集下载',
+          path: 'DataCollection/Download',
+          component: Download
+        },
+        {
+          name: '数据集删除',
+          path: 'DataCollection/Delete',
+          component: DelelteData
+        },
+        {
+          name: '数据集查看',
+          path: 'DataCollection/Query',
+          component: Query
         }
       ]
     }

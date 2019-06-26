@@ -77,7 +77,7 @@ export default {
   methods: {
     handleNavClick (item) {
       console.log(item)
-      this.$router.push({ name: item.label })
+      item.name && this.$router.push({ name: item.name })
     },
 
     switchCollapse () {

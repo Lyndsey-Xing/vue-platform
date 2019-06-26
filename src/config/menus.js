@@ -6,19 +6,23 @@ export const menuGroup = [
     children: [
       {
         label: '数据集上传',
-        path: ''
+        path: '',
+        name: '数据集上传'
       },
       {
         label: '数据集下载',
-        path: ''
+        path: '',
+        name: '数据集下载'
       },
       {
         label: '数据集删除',
-        path: ''
+        path: '',
+        name: '数据集删除'
       },
       {
         label: '数据集查看',
-        path: ''
+        path: '',
+        name: '数据集查看'
       }
     ]
   },
