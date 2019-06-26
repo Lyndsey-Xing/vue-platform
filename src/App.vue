@@ -2,7 +2,7 @@
   <div id="app">
     <el-container class="wrapper">
       <el-header height="60px" style="padding:0">
-        <headertop></headertop>
+        <HeaderTop/>
       </el-header>
       <el-container>
         <el-aside :style="{width: 'auto'}">
@@ -36,7 +36,7 @@ export default {
   },
 
   components: {
-    headertop: HeaderTop,
+    HeaderTop,
     Aside
   }
 }
