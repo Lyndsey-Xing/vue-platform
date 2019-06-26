@@ -7,22 +7,22 @@ import App from './App.vue'
 import routers from './router'
 import VueRouter from 'vue-router'
 
+import Home from '@/components/Home.vue'
+import SpaceNLP from '@/components/SpaceNLP.vue'
+import TextSummar from '@/components/TextSummar.vue'
+import ChatRobot from '@/components/ChatRobot.vue'
+
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
 Vue.use(VueRouter)
-
-import Home from "@/components/Home.vue";
-import SpaceNLP from "@/components/SpaceNLP.vue";
-import TextSummar from "@/components/TextSummar.vue";
-import ChatRobot from "@/components/ChatRobot.vue";
 
 const routes = [
   { path: '/home', component: Home },
   { path: '/spacenlp', component: SpaceNLP },
   { path: '/textsummar', component: TextSummar },
   { path: '/ChatRobot', component: ChatRobot },
-  { path: '*', redirect: '/home' }   /*默认跳转路由*/
+  { path: '*', redirect: '/home' } /* 默认跳转路由 */
 ]
 
 const router = new VueRouter({

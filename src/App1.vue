@@ -6,15 +6,15 @@
 </template>
 
 <script>
-import Home from "./components/Home";
+import Home from './components/Home'
 
 export default [
   {
-    path: "/",
-    redirect: "/home",
+    path: '/',
+    redirect: '/home',
     component: Home
   }
-];
+]
 </script>
 
 <!--

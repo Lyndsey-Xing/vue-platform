@@ -34,18 +34,18 @@
 </template>
 
 <script>
-import HeaderTop from "./HeaderTop";
+import HeaderTop from './HeaderTop'
 
 export default {
-  data() {
+  data () {
     return {
-      input: ""
-    };
+      input: ''
+    }
   },
   components: {
     headertop: HeaderTop
   }
-};
+}
 </script>
 
 <style>

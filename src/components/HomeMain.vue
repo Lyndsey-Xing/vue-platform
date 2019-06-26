@@ -32,18 +32,17 @@
 </template>
 
 <script>
-import HeaderTop from "@/components/HeaderTop";
-import AsideMain from "@/components/AsideMain";
+import HeaderTop from '@/components/HeaderTop'
+import AsideMain from '@/components/AsideMain'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     headertop: HeaderTop,
     asidemain: AsideMain
   }
-};
+}
 </script>
-
 
 <!--
 #app {

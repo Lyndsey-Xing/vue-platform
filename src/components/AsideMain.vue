@@ -84,14 +84,14 @@
 <script>
 export default {
   methods: {
-    handleOpen(key, keyPath) {
-      console.log(key, keyPath);
+    handleOpen (key, keyPath) {
+      console.log(key, keyPath)
     },
-    handleClose(key, keyPath) {
-      console.log(key, keyPath);
+    handleClose (key, keyPath) {
+      console.log(key, keyPath)
     }
   }
-};
+}
 </script>
 <style>
 a:-webkit-any-link {
@@ -99,6 +99,3 @@ a:-webkit-any-link {
   color: rgb(255, 255, 255);
 }
 </style>
-
-
-
