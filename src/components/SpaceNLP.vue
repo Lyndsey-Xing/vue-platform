@@ -34,16 +34,11 @@
 </template>
 
 <script>
-import HeaderTop from './HeaderTop'
-
 export default {
   data () {
     return {
       input: ''
     }
-  },
-  components: {
-    headertop: HeaderTop
   }
 }
 </script>

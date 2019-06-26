@@ -77,10 +77,10 @@ export default {
   methods: {
     handleNavClick (item) {
       console.log(item)
+      this.$router.push({ name: item.label })
     },
 
     switchCollapse () {
-      console.log(this.collapse)
       this.$emit('collaspeChange', this.collapse)
     }
   }
