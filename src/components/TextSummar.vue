@@ -1,9 +1,6 @@
 <template>
   <el-container>
-    <!-- <router-view></router-view> -->
     <el-header height="60px">
-      <!-- <router-view/> -->
-      <headertop></headertop>
     </el-header>
     <el-main>
       <div id="intext">
@@ -30,18 +27,14 @@
 </template>
 
 <script>
-import HeaderTop from "./HeaderTop";
 
 export default {
-  data() {
+  data () {
     return {
-      input: ""
-    };
-  },
-  components: {
-    headertop: HeaderTop
+      input: ''
+    }
   }
-};
+}
 </script>
 
 <style>

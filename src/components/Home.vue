@@ -28,15 +28,14 @@
 // import SpaceNLP from "./components/SpaceNLP.vue";
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     // headertop: HeaderTop,
     // asidemain: AsideMain
     // spacenlp: SpaceNLP
   }
-};
+}
 </script>
-
 
 <!--
 #app {
